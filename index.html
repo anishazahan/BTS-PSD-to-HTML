@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <script src="https://cdn.tailwindcss.com"></script>
+     <link rel="stylesheet" href="style.css">
+     <!-- ////............tailwind cdn link........... -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
+ 
+
+     <!-- ////............fontawesom cdn link........... -->
+
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"/>
+     <!-- ////............swiper Js cdn link........... -->
+
+     <link
+     crossorigin="anonymous"
+     href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.3.2/swiper-bundle.css"
+     rel="stylesheet"
+   />
+
+   <script
+  crossorigin="anonymous"
+  defer
+  src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.3.2/swiper-bundle.min.js"
+></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    new Swiper('.swiper-container', {
+      loop: true,
+      slidesPerView: 1,
+      // spaceBetween: 8,
+      autoplay: {
+        delay: 2000,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+      breakpoints: {
+        640: {
+          slidesPerView: 1,
+          navigation:false
+        },
+        1024: {
+          slidesPerView: 1,
+        },
+      },
+    })
+  })
+</script>
+
+</head>
+<body>
+
+    <!-- //.........................   Header Section.................................... -->
+
+        <header>
+            <div class="flex flex-col md:flex-row max-w-7xl mx-auto px-5 md:px-10 justify-between py-5">
+                <div class="logo text-center lg:text-left">
+                    <img class="mx-auto lg:mx-0 mb-3 lg:mb-0" src="./img/logo.png" alt="">
+                </div>
+                <div class="menu flex space-y-4 lg:space-y-0 flex-col lg:flex-row items-center ">
+                    <a class="upercase font-medium text-[15px] px-3 hover:text-blue-600 text-gray-600" href="#">HOME</a>
+                    <a class="upercase font-medium text-[15px] px-3 hover:text-blue-600 text-gray-600" href="#">SERVICES</a>
+                    <a class="upercase font-medium text-[15px] px-3 hover:text-blue-600 text-gray-600" href="#">ABOUT</a>
+                    <a class="upercase font-medium text-[14px] px-7 hover:underline mx-4 text-gray-100 bg-blue-600 py-2 rounded-full" href="#">CONTACT US</a>
+                    <div class="flex items-center">
+                     <button class="text-gray-600 text-[12px]"> <i class="fa fa-phone"></i></button>
+                        <a class="font-medium text-[15px] text-gray-600" href="#"> +89789675</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+
+
+    <!-- //.........................   banner Section.................................... -->
+
+        <main>
+
+          <section class="banner-section">
+            <div class="flex flex-col max-w-7xl justify-start px-5 md:px-10 mx-auto pt-[8%] pb-[6%]">
+              <h2 class="font-semibold text-2xl text-gray-50 mb-1">Specialized IT Srvices & Consulting</h2>
+              <p class="text-gray-300 font-normal">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <div class="mt-8 mb-12">
+                <a class="upercase font-medium text-[14px] px-7 md:px-20  hover:underline text-gray-100 bg-blue-600 py-3 rounded-full" href="#">FREE CONSULTATION</a>
+            </div>
+            <div class="slider bg-gray-200 max-w-md rounded-lg py-5 px-2">
+              <div class="swiper-container flex-col flex  self-center relative">
+                <div class="swiper-wrapper mb-10">
+                  <div class="swiper-slide">
+                    <blockquote class="text-left ">
+                      <button class="text-blue-600 text-xl absolute px-3 mt-[-5px] mr-5 left-0 ml-[-5px]  w-3"><i class="fa fa-quote-left"></i></button>
+                      <p class="text-gray-700 text-xs px-5 italic ml-2">
+                        S has been instrumental in our success. Running two oral surgery offices with over 30 workstations, multiple imaging devices, and over 20 employees require an IT team that is responsive, intelligent, and friendly.  BTS is all of them.  I would highly recommend BTS for complex IT needs.
+                      </p>
+                      <button class="text-blue-600 text-xl absolute right-0"><i class="fa fa-quote-right"></i></button>
+                      <div class="flex flex-col px-5 mt-3 justify-between">
+                        <div class="">
+                          <h2 class="text-sm font-bold text-blue-600 italic">Dr. Ahamed CHaudury</h2>
+                        <p class="text-xs text-gray-500">Owner, Lehigh Valley Oral Surgery & Implant Cente</p>
+                        </div>
+                      </div>
+                    </blockquote>
+                  </div>
+          
+                  <div class="swiper-slide">
+                    <blockquote class="text-left ">
+                      <button class="text-blue-600 text-xl absolute px-3 mt-[-5px] mr-5 left-0 ml-[-5px]  w-3"><i class="fa fa-quote-left"></i></button>
+                      <p class="text-gray-700 text-xs px-5 italic ml-2">
+                        S has been instrumental in our success. Running two oral surgery offices with over 30 workstations, multiple imaging devices, and over 20 employees require an IT team that is responsive, intelligent, and friendly.  BTS is all of them.  I would highly recommend BTS for complex IT needs.
+                      </p>
+                      <button class="text-blue-600 text-xl absolute right-0"><i class="fa fa-quote-right"></i></button>
+                      <div class="flex flex-col px-5 mt-3 justify-between">
+                        <div class="">
+                          <h2 class="text-sm font-bold text-blue-600 italic">Dr. Ahamed CHaudury</h2>
+                        <p class="text-xs text-gray-500">Owner, Lehigh Valley Oral Surgery & Implant Cente</p>
+                        </div>
+                      </div>
+                    </blockquote>
+                  </div>
+                  <div class="swiper-slide">
+                    <blockquote class="text-left ">
+                      <button class="text-blue-600 text-xl absolute px-3 mt-[-5px] mr-5 left-0 ml-[-5px]  w-3"><i class="fa fa-quote-left"></i></button>
+                      <p class="text-gray-700 text-xs px-5 italic ml-2">
+                        S has been instrumental in our success. Running two oral surgery offices with over 30 workstations, multiple imaging devices, and over 20 employees require an IT team that is responsive, intelligent, and friendly.  BTS is all of them.  I would highly recommend BTS for complex IT needs.
+                      </p>
+                      <button class="text-blue-600 text-xl absolute right-0"><i class="fa fa-quote-right"></i></button>
+                      <div class="flex flex-col px-5 mt-3 justify-between">
+                        <div class="">
+                          <h2 class="text-sm font-bold text-blue-600 italic">Dr. Ahamed CHaudury</h2>
+                        <p class="text-xs text-gray-500">Owner, Lehigh Valley Oral Surgery & Implant Cente</p>
+                        </div>
+                      </div>
+                    </blockquote>
+                  </div>
+                </div>
+          
+                <div class="swiper-pagination absolute"></div>
+                
+              </div>
+            </div>
+            </div>
+          </section>
+          
+        
+    <!-- //.........................   What we do Section.................................... -->
+
+          <section>
+            <div class="max-w-7xl mx-auto px-5 md:px-16 my-20">
+
+              <div class="heading flex justify-center items-center space-x-3 ">
+               <div class="border h-[1px] w-full  border-blue-500"></div>
+                <h2 class="font-semibold text-[17px] md:text-2xl text-center text-gray-700 w-full">WHAT WE DO</h2>
+                <div class="border h-[1px] w-full  border-blue-500"></div>
+              </div>
+
+              <div class="flex flex-col lg:flex-row space-y-4 lg:space-y-0 lg:gap-12 mx-auto mt-16">
+
+                <!-- ..........   left Section........... -->
+
+                <div class="left flex flex-col space-y-6 lg:space-y-12 lg:w-[50%]">
+                  <div class=" flex flex-col-reverse md:flex-row md:space-x-8">
+                    <div class="flex flex-col mt-5 lg:mt-0">
+                      <h2 class="text-blue-600 font-bold text-sm text-right">BTS MONITOR</h2>
+                      <p class="font-normal text-sm text-gray-600 text-right">It is our job to guarantee that your technology performs effortlessly at all times. We continually monitor, evaluate, and track the efficiency and security of your applications and network to make sure that everything continues to run smoothly, even after we leave your site</p>
+                    </div>
+                    <div class="w-[40%] h-[40%] lg:mt-1 ml-auto ">
+                      <img src="./img/bts monitor.png" alt="">
+                    </div>
+                  </div>
+                  <div class=" flex flex-col-reverse md:flex-row md:space-x-8">
+                    <div class="flex flex-col mt-5 lg:mt-0">
+                      <h2 class="text-blue-600 font-bold text-sm text-right">BTS Support</h2>
+                      <p class="font-normal text-sm text-gray-600 text-right">It is our job to guarantee that your technology performs effortlessly at all times. We continually monitor, evaluate, and track the efficiency and security of your applications and network to make sure that everything continues to run smoothly, even after we leave your site</p>
+                    </div>
+                    <div class="w-[40%] h-[40%] lg:mt-1 ml-auto">
+                      <img src="./img/bts support.png" alt="">
+                    </div>
+                  </div>
+                  <div class=" flex flex-col-reverse md:flex-row md:space-x-8">
+                    <div class="flex flex-col mt-5 lg:mt-0">
+                      <h2 class="text-blue-600 font-bold text-sm text-right">BTS Data Protection</h2>
+                      <p class="font-normal text-sm text-gray-600 text-right">usiness Technology Services, Inc. offers an offsite backup that stores your information securely at an offsite location. This backup can be restored, if need be, without losing any information.</p>
+                    </div>
+                    <div class="w-[25%] h-[10%] lg:mt-1 ml-auto">
+                      <img src="./img/bts data protection.png" alt="">
+                    </div>
+                  </div>
+                </div>
+
+                <!-- ..........   right Section........... -->
+
+                <div class="right flex flex-col space-y-6 lg:space-y-12 ml-0 lg:w-[50%]">
+                  <div class="flex flex-col lg:flex-row space-y-4 lg:space-y-0 lg:space-x-8">
+                    <div class="w-[30%] h-[30%] lg:mt-1">
+                      <img src="./img/bts maintenance.png" alt="">
+                    </div>
+                    <div class="flex flex-col">
+                      <h2 class="text-blue-600 font-bold text-sm">BTS Maintenance</h2>
+                      <p class="font-normal text-sm text-gray-600">We ensure that your technology is always up-to-date and working as it should to keep up with your everyday working environment. We use our tools to tune up your network to the maximum performance. We use our tools to tune up your network to the maximum performance.We use our tools to tune up your network to the</p>
+                    </div>
+                  </div>
+                  <div class=" flex flex-col lg:flex-row space-y-4 lg:space-y-0 lg:space-x-8">
+                    <div class="w-[35%] h-[20%] lg:mt-1">
+                      <img src="./img/bts hosting.png" alt="">
+                    </div>
+                    <div class="flex flex-col">
+                      <h2 class="text-blue-600 font-bold text-sm">BTS Hoisting</h2>
+                      <p class="font-normal text-sm text-gray-600">BTS Data Protection
+                        usiness Technology Services, Inc. offers an offsite backup that stores your information securely at an offsite location. This backup can be restored, if need be, without losing any information.This backup can be restored, if need be, without losing any information</p>
+                    </div>
+                  </div>
+                  <div class="flex flex-col lg:flex-row space-y-4 lg:space-y-0 lg:space-x-8">
+                    <div class="w-[20%] h-[20%] lg:mt-1">
+                      <img src="./img/bts cyber security.png" alt="">
+                    </div>
+                    <div class="flex flex-col">
+                      <h2 class="text-blue-600 font-bold text-sm">BTS Ciber Security</h2>
+                      <p class="font-normal text-sm text-gray-600">With our security services in place, your data is under 24 hour protection and is constantly monitored protecting your data from any harm.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <div class="mx-auto my-10 text-center md:my-28">
+            <a href="#" class="text-sm font-semibold text-white px-8 md:px-20 py-4 rounded-full bg-blue-600">GET A FREE QUATE</a>
+          </div>
+
+
+          
+    <!-- //.........................   partners Section.................................... -->
+
+            <section class="bg-gray-200 py-10">
+              <h2 class="font-medium text-gray-600 text-2xl text-center">OUR VALUED PARTERS</h2>
+              <div class="max-w-7xl mx-auto px-5 md:px-10 lg:px-16 grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 items-center space-y-6 lg:space-x-8 py-10">
+                <img class="w-[50%] md:w-[20%] lg:w-[60%] mx-auto" src="./img/cisco.png" alt="">
+                <img class="w-[50%] md:w-[20%] lg:w-[60%] mx-auto" src="./img/dell.png" alt="">
+                <img class="w-[50%] md:w-[20%] lg:w-[60%] mx-auto" src="./img/fortinet.png" alt="">
+                <img class="w-[50%] md:w-[20%] lg:w-[60%] mx-auto" src="./img/hp.png" alt="">
+                <img class="w-[50%] md:w-[20%] lg:w-[60%] mx-auto" src="./img/microsoft.png" alt="">
+                <img class="w-[50%] md:w-[20%] lg:w-[60%] mx-auto" src="./img/trend.png" alt="">
+                <img class="w-[50%] md:w-[20%] lg:w-[60%] mx-auto" src="./img/vmware.png" alt="">
+                <img class="w-[50%] md:w-[20%] lg:w-[60%] mx-auto" src="./img/3CX.png" alt="">
+              </div>
+            </section>
+
+       <!-- //.........................   choose us Section.................................... -->       
+
+       <div class="max-w-7xl mx-auto px-5 md:px-16 my-20">
+        <div class="heading flex justify-center items-center space-x-3 ">
+          <div class="border h-[1px] w-full  border-blue-500"></div>
+           <h2 class="font-semibold text-[17px] md:text-2xl text-center text-gray-700 w-full">WHY CHOOSE US</h2>
+           <div class="border h-[1px] w-full  border-blue-500"></div>
+         </div>
+         <div class="flex flex-col lg:flex-row mx-auto mt-10 lg:mt-24 ">
+            <div class="left">
+              <div class="relative w-full h-full lg:w-[70%] lg:h-[70%] mx-auto">
+                <img  class="abosolute" src="./img/bts why-choose-us.png" alt="">
+                <div class="absolute top-[10%] lg:top-[25%] left-[8%] pr-6">
+                  <h2 class="text-gray-100 font-semibold text-xl lg:text-3xl absolute top-0 left-0">Professional IT Services & Technology Consulting</h2>
+                  <h2 class="text-gray-100 mb-[10%] mt-[45%] mb-[20%]">Whatever your technological needs may be, we are here to help</h2>
+                  <div class="">
+                    <a href="#" class=" px-6 md:px-16 py-4 text-sm font-semibold text-white bg-blue-600 rounded-full">GET TO KNOW US</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="right flex flex-col space-y-8 lg:space-y-16 mt-10 lg:mt-0">
+              <div class="flex flex-col space-x-4 md:flex-row ">
+                <img class="w-[12%] ml-2 md:ml-0 lg:mb-0 mb-2" src="./img/bts 24.png" alt="">
+                <div class="">
+                  <h2 class="font-bold text-xl text-blue-600">24/7 Customer support</h2>
+                  <h2 class="text-gray-500 text-sm">We value your time. We guarantee a high response rate.</h2>
+                </div>
+              </div>
+              <div class="flex flex-col space-x-4 md:flex-row  ">
+                <img class="w-[12%] ml-2 md:ml-0 lg:mb-0 mb-2" src="./img/bts fast.png" alt="">
+                <div class="">
+                  <h2 class="font-bold text-xl text-blue-600">Fast Turnaround Time</h2>
+                  <h2 class="text-gray-500 text-sm">We value your time. We guarantee a high response rate.</h2>
+                </div>
+              </div>
+              <div class="flex flex-col space-x-4 md:flex-row  ">
+                <img class="w-[12%] ml-2 md:ml-0 lg:mb-0 mb-2" src="./img/bts tailored.png" alt="">
+                <div class="">
+                  <h2 class="font-bold text-xl text-blue-600">Tailored IT Services</h2>
+                  <h2 class="text-gray-500 text-sm">No matter what type of industry you are in, we can support your business' IT needs.</h2>
+                </div>
+              </div>
+              <div class="flex flex-col space-x-4 md:flex-row  ">
+                <img class="w-[12%] ml-2 md:ml-0 lg:mb-0 mb-2" src="./img/bts certified.png" alt="">
+                <div class="">
+                  <h2 class="font-bold text-xl text-blue-600">We Are Fully Certified!</h2>
+                  <h2 class="text-gray-500 text-sm">Certified by recognized organizations in the industry.</h2>
+                </div>
+              </div>
+            </div>
+         </div>
+      </div>
+
+      <!-- //.........................   countdown Section.................................... -->
+
+        <section class="bg-gray-200 py-16 md:py-24 mt-10 mb-20">
+          <div class="flex max-w-7xl mx-auto px-5 md:px-10 lg:px-16 flex-col md:flex-row justify-between items-center space-y-6 lg:space-y-0">
+            <div class="text-center">
+              <h2 class="italic font-black text-6xl text-blue-600 mb-2">5</h2>
+              <h2 class="text-gray-500 text-2xl ">Certified It Expert</h2>
+            </div>
+            <div class="text-center">
+              <h2 class="italic font-black text-6xl text-blue-600 mb-2">19</h2>
+              <h2 class="text-gray-500 text-2xl ">Years of Experience</h2>
+            </div>
+            <div class="text-center">
+              <h2 class="italic font-black text-6xl text-blue-600 mb-2">1000+</h2>
+              <h2 class="text-gray-500 text-2xl ">Satisfied Clients and Counting...</h2>
+            </div>
+          </div>
+        </section>
+
+
+    <!-- //.........................   testimonial Section.................................... -->
+
+    <section class="max-w-7xl mx-auto px-5 md:px-10 lg:px-16 mb-20">
+      <div class="heading flex justify-center items-center space-x-3 ">
+        <div class="border h-[1px] w-full  border-blue-500"></div>
+         <h2 class="font-semibold text-[17px] md:text-2xl text-center text-gray-700 w-full">CLIENT STORIES </h2>
+         <div class="border h-[1px] w-full  border-blue-500"></div>
+       </div>
+       <h2 class="text-center text-blue-500 text-xl">And why they love what we do…</h2>
+       <div>
+        <div class="text-center">
+          <img class="mx-auto my-10 md:my-16" src="./img/client logo.png" alt="">
+        </div>
+         <div class=" flex justify-center relative">
+             <div class="mx-auto w-full md:w-[60%] flex">
+                <div class="swiper-container flex-col flex  self-center relative">
+             <div class="swiper-wrapper mb-16">
+               <div class="swiper-slide">
+                 <blockquote class="text-left ">
+                    <div class="relative p-5">
+                      <button class="text-blue-600 text-2xl absolute left-0  w-6"><i class="fa fa-quote-left"></i></button>
+                    <p class="text-gray-700 text-sm px-5">
+                      As an environmental laboratory testing/analysis and field sampling service, Hampton-Clarke remains on call 24×7 for our clients. We have depended on Jag and his staff at Business Technology Services to ensure that technologically we are always up and running since 2001. Great responsiveness; great results!
+                    </p>
+                    <button class="text-blue-600 text-2xl absolute right-0"><i class="fa fa-quote-right"></i></button>
+                    <div class="text-sm mt-5 mx-2 space-y-2 lg:space-y-0 md:mx-5 flex flex-col md:flex-row items-center space-x-3">
+                      <img src="./img/testimonial1.png" alt="">
+                       <div class="flex space-x-3 items-center">
+                        <p class="font-bold text-[16px] text-blue-600">Ajimon</p>
+                        <div class="h-3 border text-gray-400 md:block"></div>
+                       </div>
+                       <p class=" text-gray-500 italic font-medium">President/CEO Hampton-Clark inc </p>
+                     </div>
+                   </div>
+                   
+                 </blockquote>
+               </div>
+       
+               <div class="swiper-slide">
+                <blockquote class="text-left ">
+                   <div class="relative p-5">
+                     <button class="text-blue-600 text-2xl absolute left-0  w-6"><i class="fa fa-quote-left"></i></button>
+                   <p class="text-gray-700 text-sm px-5">
+                    As an environmental laboratory testing/analysis and field sampling service, Hampton-Clarke remains on call 24×7 for our clients. We have depended on Jag and his staff at Business Technology Services to ensure that technologically we are always up and running since 2001. Great responsiveness; great results!
+                   </p>
+                   <button class="text-blue-600 text-2xl absolute right-0"><i class="fa fa-quote-right"></i></button>
+                   <div class="text-sm mt-5 mx-2 space-y-2 lg:space-y-0 md:mx-5 flex flex-col md:flex-row items-center space-x-3">
+                     <img src="./img/ins2.png" alt="">
+                      <div class="flex space-x-3 items-center">
+                       <p class="font-bold text-[16px] text-blue-600">Ajimon</p>
+                       <div class="h-3 border text-gray-400 md:block"></div>
+                      </div>
+                      <p class=" text-gray-500 italic font-medium">President/CEO Hampton-Clark inc </p>
+                    </div>
+                  </div>
+                  
+                </blockquote>
+              </div>
+       
+              <div class="swiper-slide">
+                <blockquote class="text-left ">
+                   <div class="relative p-5">
+                     <button class="text-blue-600 text-2xl absolute left-0  w-6"><i class="fa fa-quote-left"></i></button>
+                   <p class="text-gray-700 text-sm px-5">
+                    As an environmental laboratory testing/analysis and field sampling service, Hampton-Clarke remains on call 24×7 for our clients. We have depended on Jag and his staff at Business Technology Services to ensure that technologically we are always up and running since 2001. Great responsiveness; great results!
+                   </p>
+                   <button class="text-blue-600 text-2xl absolute right-0"><i class="fa fa-quote-right"></i></button>
+                   <div class="text-sm mt-5 mx-2 space-y-2 lg:space-y-0 md:mx-5 flex flex-col md:flex-row items-center space-x-3">
+                     <img src="./img/testimonial1.png" alt="">
+                      <div class="flex space-x-3 items-center">
+                       <p class="font-bold text-[16px] text-blue-600">Ajimon</p>
+                       <div class="h-3 border text-gray-400 md:block"></div>
+                      </div>
+                      <p class=" text-gray-500 italic font-medium">President/CEO Hampton-Clark inc </p>
+                    </div>
+                  </div>
+                  
+                </blockquote>
+              </div>
+             </div>
+       
+             <div class=" swiper-pagination absolute"></div>
+             
+           </div>
+             </div>
+           
+       
+             <div class="swiper-button-prev absolute md:block"></div>
+             <div class="swiper-button-next absolute md:block"></div>
+          
+         </div>
+       </div>
+      
+    </section>
+
+
+    <!-- //.........................   it expert Section.................................... -->
+
+        <section class="max-w-7xl mx-auto px-5 md:px-10 lg:px-20 bg-no-repeat bg-cover bg-center relative"  >
+          <div class="h-full w-full mb-20" style="background-image: url('./img/ad.png');">
+           <div class="px-5 md:px-16 py-16 text-center lg:text-left ">
+            <h2 class="text-blue-600 font-bold text-xl">Loking for an It expert</h2>
+            <h2 class="text-gray-100 my-3 font-semibold text-sm">Tell us what you need?</h2>
+            <div class="mt-8">
+              <a class=" px-8 md:px-20 py-3 rounded-full md:py-4 bg-blue-600 text-white text-sm font-semibold" href="#"> GET A QUATE</a>
+            </div>
+           </div>
+          </div>
+        </section>
+
+    <!-- //.........................   mission  Section.................................... -->
+
+    <section>
+      <div class="max-w-2xl mx-auto mb-20 mt-5">
+        <h2 class="text-center text-gray-600 text-2xl md:text-3xl">FIVE SPHERES.
+          <br/>ONE MISSION.</h2>
+          <div class="flex justify-between px-5 md:px-16 space-x-3 md:space-x-0">
+            <div class="flex flex-col justify-center items-center w-36 h-36 rounded-full bg-blue-600">
+              <img class="w-[30%]" src="./img/bts tailored.png" alt="">
+             <h2 class="font-bold text-xl text-white">Secure</h2>
+            </div>
+            <div class="flex flex-col justify-center items-center w-36 h-36 rounded-full bg-blue-600">
+             <!-- <button class="text-5xl text-white"><i class="fa-solid fa-lock"></i></button> -->
+             <img class="w-[30%]" src="./img/bts maintenance.png" alt="">
+             <h2 class="font-bold text-xl text-white">Secure</h2>
+            </div>
+          </div>
+          <h2 class="text-center italic text-xl text-blue-500 max-w-sm mx-auto">Our mission is to have you productive with the most minimal downtime.</h2>
+
+          <div class="flex justify-between px-6 md:mt-[-2rem] space-x-3 md:space-x-0">
+            <div class="flex flex-col justify-center items-center w-36 h-36 rounded-full bg-blue-600">
+              <img class="w-[30%]" src="./img/bts monitor.png" alt="">
+             <h2 class="font-bold text-xl text-white">Secure</h2>
+            </div>
+            <div class="flex flex-col justify-center items-center w-36 h-36 rounded-full bg-blue-600">
+              <img class="w-[30%]" src="./img/bts support.png" alt="">
+             <h2 class="font-bold text-xl text-white">Secure</h2>
+            </div>
+          </div>
+          <div class="flex flex-col justify-center items-center text-center mx-auto w-36 h-36 rounded-full bg-blue-600 md:mt-[-2rem]">
+            <img class="w-[30%]" src="./img/bts cyber security.png" alt="">
+            <h2 class="font-bold text-xl text-white">Secure</h2>
+           </div>
+      </div>
+    </section>
+
+    <!-- //.........................   contact Section.................................... -->
+
+    <section class=" py-16 bg-no-repeat bg-cover bg-center relative" style="background-image: url('./img/footer.png');">
+        <div class="md:w-[550px] rounded-md shadow-lg px-5 md:px-10 lg:px-16 ">
+          <div class="max-w-xl py-10 px-5 bg-blue-500">
+
+            <div class="flex flex-col space-y-2 justify-between mb-4">
+              <div class="flex items-baseline space-x-8">
+                <h2 class="font-bold text-white">Office:</h2>
+                <p class="text-xs text-gray-300">14-36 28th Ave<br/>
+                  Astoria, NY 11102</p>
+              </div>
+              <div class="flex items-baseline space-x-8">
+                <h2 class="font-bold text-white">Email:</h2>
+                <p class="text-xs text-gray-300">jag@btsus.com 
+                  support@btsus.com</p>
+              </div>
+              <div class="flex items-baseline space-x-8">
+                <h2 class="font-bold text-white">Phone/fax:</h2>
+                <p class="text-xs text-gray-300">718-707-3545</p>
+              </div>
+            </div>
+            <input placeholder="Name" type="text" class="w-full px-4 py-2 bg-white outline-none border-none placeholder-blue-500 text-sm font-medium rounded mb-2 text-black italic">
+            <input placeholder="Email" type="email" class="w-full px-4 py-2 bg-white outline-none border-none placeholder-blue-500 text-sm font-medium rounded mb-2 text-black italic">
+            <input placeholder="Address" type="text" class="w-full px-4 py-2 bg-white outline-none border-none placeholder-blue-500 text-sm font-medium rounded mb-2 text-black italic">
+            <div class="flex space-x-4 mt-4 mb-3">
+              <div class="flex space-x-2">
+                <input type="radio" value="">
+                <label class="text-sm italic text-gray-100" for="">Residential</label>
+              </div>
+              <div class="flex space-x-2">
+                <input type="radio" value="">
+                <label class="text-sm italic text-gray-100" for="">Business</label>
+              </div>
+            </div>
+            <textarea placeholder="Message" class="w-full px-4 py-2 bg-white outline-none border-none placeholder-blue-500 text-sm font-medium rounded mb-2 text-black italic" name="" id="" cols="30" rows="6"></textarea>
+            <div class="py-5 flex flex-col md:flex-row justify-between items-center">
+              <h2 class="font-semibold text-white">ax <sup>2</sup>+bx<sup>2</sup>+c=------------</h2>
+              <input type="submit" value="Send" class="font-bold bg-white text-sm text-blue-600 px-10 py-2 rounded-full" >
+            </div>
+          </div>
+         
+        </div>
+    </section>
+
+
+    
+
+  </main>
+   
+    <!-- //.........................   footer Section.................................... -->
+    <footer class="bg-black py-7">
+      <div class="flex space-x-2 md:space-x-4 items-center justify-center">
+        <a class="font-semibold text-gray-300 text-sm" href="">SERVICES</a>
+        <a class="font-semibold text-gray-300 text-sm" href="">ABOUT</a>
+        <a class="font-semibold text-gray-300 text-sm" href="">CONTACT</a>
+      </div>
+      <p class="text-sm text-gray-500 text-center mt-2">© 2020 Business Technology Services, Inc. All rights reserved.</p>
+    </footer>
+
+  
+</body>
+</html>
